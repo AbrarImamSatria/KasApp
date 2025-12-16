@@ -38,10 +38,17 @@ object UpdateMenu : Destinasi {
 }
 
 /**
- * Destinasi untuk Halaman Sukses
+ * Destinasi untuk Halaman Sukses Menu (Menu Management)
  */
-object SuccessScreen : Destinasi {
-    override val route = "success_screen"
+object SuccessScreenMenu : Destinasi {
+    override val route = "success_screen_menu"
+}
+
+/**
+ * Destinasi untuk Halaman Sukses Kasir (Checkout/Transaksi)
+ */
+object SuccessScreenKasir : Destinasi {
+    override val route = "success_screen_kasir"
 }
 
 /**
@@ -58,8 +65,6 @@ object Riwayat : Destinasi {
     override val route = "riwayat"
 }
 
-// --- TAMBAHAN YANG DIPERLUKAN ---
-
 /**
  * Destinasi untuk Halaman Rincian Pesanan (Checkout)
  */
@@ -68,8 +73,26 @@ object RincianPesanan : Destinasi {
 }
 
 /**
- * Destinasi untuk Halaman Nota Pesanan (Struk)
+ * Destinasi untuk Halaman Nota Pesanan (Struk - Setelah Transaksi Baru)
  */
 object NotaPesanan : Destinasi {
     override val route = "nota_pesanan"
+}
+
+/**
+ * Destinasi untuk Halaman Detail Riwayat (Melihat Transaksi Lama)
+ */
+object DetailRiwayat : Destinasi {
+    override val route = "detail_riwayat"
+}
+
+/**
+ * Destinasi untuk Halaman Profile
+ */
+object Profile : Destinasi {
+    override val route = "profile"
+}
+
+object TentangKami : Destinasi {
+    override val route = "tentang_kami"
 }

@@ -19,7 +19,8 @@ import androidx.compose.ui.unit.sp
 fun HomeView(
     onNavigateToKelolaMenu: () -> Unit,
     onNavigateToKasir: () -> Unit,
-    onNavigateToRiwayat: () -> Unit
+    onNavigateToRiwayat: () -> Unit,
+    onNavigateToProfile: () -> Unit
 ) {
     Column(
         modifier = Modifier
@@ -57,6 +58,15 @@ fun HomeView(
             text = "Riwayat Pesanan",
             onClick = onNavigateToRiwayat
         )
+
+        Spacer(modifier = Modifier.height(20.dp))
+
+        // Ubah tombol Profile yang terakhir
+        HomeScreenButton(
+            text = "Profile",
+            onClick = onNavigateToProfile  // Ubah dari onNavigateToRiwayat
+        )
+
     }
 }
 
